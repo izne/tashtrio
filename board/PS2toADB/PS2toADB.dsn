@@ -1,0 +1,306 @@
+(pcb C:\Users\izne\Documents\KiCad_Projects\PS2toADB\PS2toADB.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(7.0.0)")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  179136 -53933.3  142284 -53931.4  142240 -22860  142259 -22553.8
+            142314 -22252.1  142405 -21959.3  142531 -21679.6  142690 -21417.1
+            142879 -21175.7  143096 -20958.8  143337 -20769.6  143600 -20610.9
+            143879 -20485.1  144172 -20393.8  144474 -20338.5  144780 -20320
+            179127 -20320  179136 -53933.3)
+    )
+    (plane GND (polygon F.Cu 0  142317 -53872.2  179268 -53867.9  179144 -20259.9  142240 -20320
+            142317 -53872.2))
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
+      (place D1 148371.800000 -33020.000000 front -90.000000 (PN 1N4148))
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical
+      (place R1 148038.400000 -26953.300000 front -90.000000 (PN 100))
+    )
+    (component "PS2_mini_din_6:MINI-DIN-4-FULL-SHIELD"
+      (place ADB_J1 179001.800000 -29380.300000 front -90.000000 (PN "Mini-DIN-4"))
+    )
+    (component Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
+      (place C1 151117.200000 -23851.100000 front 0.000000 (PN "100 nF"))
+    )
+    (component "PS2_mini_din_6:MINI-DIN-6-FULL-SHIELD"
+      (place PS2MSE_J3 170109.700000 -53889.100000 front 180.000000 (PN "Mini-DIN-6"))
+      (place PS2KBD_J2 151606.900000 -53913.800000 front 180.000000 (PN "Mini-DIN-6"))
+    )
+    (component "Package_DIP:DIP-8_W7.62mm"
+      (place U1 151140.000000 -26870.200000 front 0.000000 (PN PIC12F1840))
+    )
+  )
+  (library
+    (image "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
+      (outline (path signal 120  1213.63 0  1100 0))
+      (outline (path signal 120  3866.37 0  3847.29 -224.158  3790.61 -441.867  3697.94 -646.864
+            3571.96 -833.253  3416.3 -995.67  3235.43 -1129.44  3034.55 -1230.72
+            2819.44 -1296.6  2596.29 -1325.18  2371.53 -1315.63  2151.61 -1268.23
+            1942.86 -1184.35  1751.3 -1066.4  1582.42 -917.768  1441.09 -742.734
+            1331.37 -546.334  1256.43 -334.216  1218.41 -112.484  1218.41 112.484
+            1256.43 334.216  1331.37 546.334  1441.09 742.734  1582.42 917.768
+            1751.3 1066.4  1942.86 1184.35  2151.61 1268.23  2371.53 1315.63
+            2596.29 1325.18  2819.44 1296.6  3034.55 1230.72  3235.43 1129.44
+            3416.3 995.67  3571.96 833.253  3697.94 646.864  3790.61 441.867
+            3847.29 224.158  3866.37 0))
+      (outline (path signal 50  -1050 -1250  3790 -1250))
+      (outline (path signal 50  -1050 1250  -1050 -1250))
+      (outline (path signal 50  3790 1250  -1050 1250))
+      (outline (path signal 50  3790 -1250  3790 1250))
+      (outline (path signal 100  0 0  2540 0))
+      (outline (path signal 100  3540 0  3520.78 -195.09  3463.88 -382.683  3371.47 -555.57
+            3247.11 -707.107  3095.57 -831.47  2922.68 -923.88  2735.09 -980.785
+            2540 -1000  2344.91 -980.785  2157.32 -923.88  1984.43 -831.47
+            1832.89 -707.107  1708.53 -555.57  1616.12 -382.683  1559.21 -195.09
+            1540 0  1559.21 195.09  1616.12 382.683  1708.53 555.57  1832.89 707.107
+            1984.43 831.47  2157.32 923.88  2344.91 980.785  2540 1000  2735.09 980.785
+            2922.68 923.88  3095.57 831.47  3247.11 707.107  3371.47 555.57
+            3463.88 382.683  3520.78 195.09  3540 0))
+      (pin Rect[A]Pad_1600x1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 2540 0)
+    )
+    (image Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical
+      (outline (path signal 120  920 0  1540 0))
+      (outline (path signal 120  920 0  901.168 -185.195  845.441 -362.807  755.102 -525.567
+            633.85 -666.809  486.647 -780.753  319.521 -862.732  139.314 -909.391
+            -46.597 -918.819  -230.6 -890.631  -405.163 -825.98  -563.138 -727.514
+            -698.057 -599.263  -804.399 -446.478  -877.808 -275.414  -915.28 -93.075
+            -915.28 93.075  -877.808 275.414  -804.399 446.478  -698.057 599.263
+            -563.138 727.514  -405.163 825.98  -230.6 890.631  -46.597 918.819
+            139.314 909.391  319.521 862.732  486.647 780.753  633.85 666.809
+            755.102 525.567  845.441 362.807  901.168 185.195  920 0))
+      (outline (path signal 50  3490 -1050  3490 1050))
+      (outline (path signal 50  -1050 -1050  3490 -1050))
+      (outline (path signal 50  3490 1050  -1050 1050))
+      (outline (path signal 50  -1050 1050  -1050 -1050))
+      (outline (path signal 100  0 0  2540 0))
+      (outline (path signal 100  800 0  781.296 -171.976  726.06 -335.911  636.874 -484.139
+            517.909 -609.73  374.727 -706.81  214.023 -770.84  43.311 -798.827
+            -129.426 -789.461  -296.111 -743.181  -448.95 -662.151  -580.796 -550.16
+            -685.486 -412.443  -758.123 -255.441  -795.31 -86.495  -795.31 86.495
+            -758.123 255.441  -685.486 412.443  -580.796 550.16  -448.95 662.151
+            -296.111 743.181  -129.426 789.461  43.311 798.827  214.023 770.84
+            374.727 706.81  517.909 609.73  636.874 484.139  726.06 335.911
+            781.296 171.976  800 0))
+      (pin Round[A]Pad_1400_um 1 0 0)
+      (pin Oval[A]Pad_1400x1400_um 2 2540 0)
+    )
+    (image "PS2_mini_din_6:MINI-DIN-4-FULL-SHIELD"
+      (outline (path signal 150  -8800 -2500  8800 -2500))
+      (outline (path signal 150  -8800 -13000  -8800 -2500))
+      (outline (path signal 150  8800 -2500  8800 -13000))
+      (outline (path signal 150  8800 -13000  -8800 -13000))
+      (outline (path signal 150  -9000 0  9250 0))
+      (outline (path signal 150  -9000 -13200  -9000 0))
+      (outline (path signal 150  9250 0  9250 -13200))
+      (outline (path signal 150  9250 -13200  -9000 -13200))
+      (pin Round[A]Pad_1524_um 1 3400 -11000)
+      (pin Round[A]Pad_1524_um 2 -3400 -11000)
+      (pin Round[A]Pad_1524_um 3 -3400 -8500)
+      (pin Round[A]Pad_1524_um 4 3400 -8500)
+      (pin Round[A]Pad_3300_um 5 -6750 -5500)
+      (pin Round[A]Pad_3300_um 5@1 0 -4700)
+      (pin Round[A]Pad_3300_um 5@2 6750 -5500)
+    )
+    (image Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
+      (outline (path signal 120  621 -920  1879 -920))
+      (outline (path signal 120  621 920  1879 920))
+      (outline (path signal 50  3550 -1050  3550 1050))
+      (outline (path signal 50  -1050 -1050  3550 -1050))
+      (outline (path signal 50  3550 1050  -1050 1050))
+      (outline (path signal 50  -1050 1050  -1050 -1050))
+      (outline (path signal 100  -250 -800  2750 -800))
+      (outline (path signal 100  -250 800  -250 -800))
+      (outline (path signal 100  2750 800  -250 800))
+      (outline (path signal 100  2750 -800  2750 800))
+      (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Round[A]Pad_1600_um 2 2500 0)
+    )
+    (image "PS2_mini_din_6:MINI-DIN-6-FULL-SHIELD"
+      (outline (path signal 150  9250 0  9250 -13200))
+      (outline (path signal 150  -8800 -13000  -8800 -2500))
+      (outline (path signal 150  8800 -13000  -8800 -13000))
+      (outline (path signal 150  8800 -2500  8800 -13000))
+      (outline (path signal 150  -8800 -2500  8800 -2500))
+      (outline (path signal 150  9250 -13200  -9000 -13200))
+      (outline (path signal 150  -9000 0  9250 0))
+      (outline (path signal 150  -9000 -13200  -9000 0))
+      (pin Round[A]Pad_3300_um 7 -6750 -5500)
+      (pin Round[A]Pad_3300_um 7@1 6750 -5500)
+      (pin Round[A]Pad_1524_um 4 3400 -8500)
+      (pin Round[A]Pad_1524_um 6 3400 -11000)
+      (pin Round[A]Pad_1524_um 3 -3400 -8500)
+      (pin Round[A]Pad_1524_um 5 -3400 -11000)
+      (pin Round[A]Pad_1524_um 2 1300 -8500)
+      (pin Round[A]Pad_1524_um 1 -1300 -8500)
+      (pin Round[A]Pad_3300_um 7@2 0 -4700)
+    )
+    (image "Package_DIP:DIP-8_W7.62mm"
+      (outline (path signal 120  6460 1330  4810 1330))
+      (outline (path signal 120  1160 1330  1160 -8950))
+      (outline (path signal 120  6460 -8950  6460 1330))
+      (outline (path signal 120  2810 1330  1160 1330))
+      (outline (path signal 120  1160 -8950  6460 -8950))
+      (outline (path signal 0  4852.43 1372.43  4870 1330  4851.95 1135.23  4798.42 947.084
+            4711.23 771.982  4593.35 615.883  4448.79 484.102  4282.48 381.127
+            4100.08 310.465  3907.8 274.522  3712.2 274.522  3519.92 310.465
+            3337.52 381.127  3171.21 484.102  3026.65 615.883  2908.77 771.982
+            2821.58 947.084  2768.05 1135.23  2750 1330  2767.57 1372.43
+            2810 1390  2852.43 1372.43  2870 1330  2888.06 1146.62  2941.55 970.278
+            3028.42 807.764  3145.32 665.32  3287.76 548.419  3450.28 461.553
+            3626.61 408.062  3810 390  3993.39 408.062  4169.72 461.553
+            4332.24 548.419  4474.68 665.32  4591.58 807.764  4678.45 970.278
+            4731.94 1146.62  4750 1330  4767.57 1372.43  4810 1390))
+      (outline (path signal 50  -1100 1550  -1100 -9150))
+      (outline (path signal 50  8700 -9150  8700 1550))
+      (outline (path signal 50  -1100 -9150  8700 -9150))
+      (outline (path signal 50  8700 1550  -1100 1550))
+      (outline (path signal 100  1635 1270  6985 1270))
+      (outline (path signal 100  6985 -8890  635 -8890))
+      (outline (path signal 100  6985 1270  6985 -8890))
+      (outline (path signal 100  635 -8890  635 270))
+      (outline (path signal 100  635 270  1635 1270))
+      (pin Rect[A]Pad_1600x1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 0 -2540)
+      (pin Oval[A]Pad_1600x1600_um 3 0 -5080)
+      (pin Oval[A]Pad_1600x1600_um 4 0 -7620)
+      (pin Oval[A]Pad_1600x1600_um 5 7620 -7620)
+      (pin Oval[A]Pad_1600x1600_um 6 7620 -5080)
+      (pin Oval[A]Pad_1600x1600_um 7 7620 -2540)
+      (pin Oval[A]Pad_1600x1600_um 8 7620 0)
+    )
+    (padstack Round[A]Pad_1400_um
+      (shape (circle F.Cu 1400))
+      (shape (circle B.Cu 1400))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1524_um
+      (shape (circle F.Cu 1524))
+      (shape (circle B.Cu 1524))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1600_um
+      (shape (circle F.Cu 1600))
+      (shape (circle B.Cu 1600))
+      (attach off)
+    )
+    (padstack Round[A]Pad_3300_um
+      (shape (circle F.Cu 3300))
+      (shape (circle B.Cu 3300))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1400x1400_um
+      (shape (path F.Cu 1400  0 0  0 0))
+      (shape (path B.Cu 1400  0 0  0 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1600x1600_um
+      (shape (path F.Cu 1600  0 0  0 0))
+      (shape (path B.Cu 1600  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1600x1600_um
+      (shape (rect F.Cu -800 -800 800 800))
+      (shape (rect B.Cu -800 -800 800 800))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(D1-K)"
+      (pins D1-1 U1-4)
+    )
+    (net /PS2_KBD_DATA
+      (pins D1-2 PS2KBD_J2-1)
+    )
+    (net VCC
+      (pins R1-1 ADB_J1-3 C1-1 U1-1)
+    )
+    (net /ADB_DATA
+      (pins ADB_J1-1 U1-2)
+    )
+    (net /PS2_MSE_DATA
+      (pins R1-2 PS2MSE_J3-1 U1-3)
+    )
+    (net /PS2_CLK
+      (pins PS2MSE_J3-5 PS2KBD_J2-5 U1-5)
+    )
+    (net "unconnected-(U1-RA1-Pad6)"
+      (pins U1-6)
+    )
+    (net "unconnected-(U1-RA0-Pad7)"
+      (pins U1-7)
+    )
+    (net GND
+      (pins ADB_J1-4 C1-2 PS2MSE_J3-3 PS2KBD_J2-3 U1-8)
+    )
+    (net "unconnected-(ADB_J1-Pad2)"
+      (pins ADB_J1-2)
+    )
+    (net "unconnected-(PS2KBD_J2-Pad4)"
+      (pins PS2KBD_J2-4)
+    )
+    (net "unconnected-(PS2KBD_J2-Pad6)"
+      (pins PS2KBD_J2-6)
+    )
+    (net "unconnected-(PS2KBD_J2-Pad2)"
+      (pins PS2KBD_J2-2)
+    )
+    (net "unconnected-(PS2MSE_J3-Pad4)"
+      (pins PS2MSE_J3-4)
+    )
+    (net "unconnected-(PS2MSE_J3-Pad6)"
+      (pins PS2MSE_J3-6)
+    )
+    (net "unconnected-(PS2MSE_J3-Pad2)"
+      (pins PS2MSE_J3-2)
+    )
+    (class kicad_default "" /ADB_DATA /PS2_CLK /PS2_KBD_DATA /PS2_MSE_DATA
+      GND "Net-(D1-K)" VCC "unconnected-(ADB_J1-Pad2)" "unconnected-(PS2KBD_J2-Pad2)"
+      "unconnected-(PS2KBD_J2-Pad4)" "unconnected-(PS2KBD_J2-Pad6)" "unconnected-(PS2MSE_J3-Pad2)"
+      "unconnected-(PS2MSE_J3-Pad4)" "unconnected-(PS2MSE_J3-Pad6)" "unconnected-(U1-RA0-Pad7)"
+      "unconnected-(U1-RA1-Pad6)"
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

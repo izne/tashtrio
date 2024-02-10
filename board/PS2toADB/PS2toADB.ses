@@ -1,0 +1,198 @@
+(session PS2toADB.ses
+  (base_design PS2toADB.dsn)
+  (placement
+    (resolution um 10)
+    (component "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
+      (place D1 1483718 -330200 front 270)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical
+      (place R1 1480384 -269533 front 270)
+    )
+    (component "PS2_mini_din_6:MINI-DIN-4-FULL-SHIELD"
+      (place ADB_J1 1790018 -293803 front 270)
+    )
+    (component Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
+      (place C1 1511172 -238511 front 0)
+    )
+    (component "PS2_mini_din_6:MINI-DIN-6-FULL-SHIELD"
+      (place PS2MSE_J3 1701097 -538891 front 180)
+      (place PS2KBD_J2 1516069 -539138 front 180)
+    )
+    (component "Package_DIP:DIP-8_W7.62mm"
+      (place U1 1511400 -268702 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(7.0.0)")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(D1-K)"
+        (wire
+          (path B.Cu 2500
+            1483718 -330200
+            1494987 -330200
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1511400 -344902
+            1500131 -344902
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1500131 -344902
+            1494987 -339758
+            1494987 -330200
+          )
+        )
+      )
+      (net /PS2_KBD_DATA
+        (wire
+          (path B.Cu 2500
+            1529069 -454138
+            1483718 -408787
+            1483718 -355600
+          )
+        )
+      )
+      (net VCC
+        (wire
+          (path B.Cu 2500
+            1705018 -259803
+            1693982 -248767
+            1549564 -248767
+            1540898 -257433
+            1511400 -257433
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1511400 -263067
+            1486850 -263067
+            1480384 -269533
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1511400 -263067
+            1511400 -257433
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1511400 -268702
+            1511400 -263067
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1511400 -257433
+            1511172 -257205
+            1511172 -238511
+          )
+        )
+      )
+      (net /ADB_DATA
+        (wire
+          (path B.Cu 2500
+            1511400 -294102
+            1522669 -294102
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1522669 -294102
+            1533938 -305371
+            1657586 -305371
+            1680018 -327803
+          )
+        )
+      )
+      (net /PS2_MSE_DATA
+        (wire
+          (path B.Cu 2500
+            1511400 -319502
+            1511400 -330771
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1714097 -453891
+            1701844 -441638
+            1546631 -441638
+            1529433 -424440
+            1529433 -346469
+            1513735 -330771
+            1511400 -330771
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1480384 -294933
+            1480384 -305202
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1511400 -319502
+            1500131 -319502
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1500131 -319502
+            1485831 -305202
+            1480384 -305202
+          )
+        )
+      )
+      (net /PS2_CLK
+        (wire
+          (path B.Cu 2500
+            1587600 -391607
+            1550069 -429138
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1587600 -344902
+            1587600 -391607
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1587600 -391607
+            1697813 -391607
+            1735097 -428891
+          )
+        )
+      )
+    )
+  )
+)
