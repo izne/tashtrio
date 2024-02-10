@@ -21,3 +21,28 @@ PS/2 mice require their host to send a command byte to start the flow of mouse m
 ## Building Firmware
 
 Building the firmware requires Microchip MPASM, which is included with their development environment, MPLAB.  Note that you **must** use MPLAB X version 5.35 or earlier or MPLAB 8 as later versions of MPLAB X have removed MPASM.
+
+## Download links
+
+[MPLAB Archives](https://www.microchip.com/en-us/tools-resources/archives/mplab-ecosystem)
+
+[MPLABX-v5.35-windows](https://ww1.microchip.com/downloads/en/DeviceDoc/MPLABX-v5.35-windows-installer.exe)
+
+
+
+## PS2toADB board
+Simply put a possible schematic.
+
+## FTDI programmer for PIC12
+Considering uploading the HEX over UART by using an FT23 adapter and [fpicprog](https://github.com/gphalkes/fpicprog)
+
+## Building fpicprog
+````code 
+apt install libgflags-dev libftdi1-dev 
+````
+
+## Flashing the HEX
+fpicprog
+
+## References
+[8-bit PIC design recommendations](https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/design-recommendations/)
