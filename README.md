@@ -32,12 +32,17 @@ Building the firmware requires Microchip MPASM, which is included with their dev
 
 ## PS2toADB board
 Just a quick, minimal schematic.
+![YO](/images/board1.PNG)
+
+![Y1](/images/top1.PNG)
 
 ## Writing the firmware to the PIC12
-ICSP LVP with just an FT232R adapter appears to be one quick and cheap way.
-As for the software, there exist at least two easy options: PICPgm and fpicprog.
-Attached a one-pager to explain the process with using PICPgm on Windows.
+ICSP LVP with just an FT232R adapter appears to be one fast and cheap way.
+As for the software, there are at least two easy options: PICPgm and fpicprog. For FT232R, you need to remap the pins.
+Attached a one-pager PICPgm hints.
 ![ICSP_LVP_FTDI](/images/PIC12_Programming_All-in-One.png)
 
 ## References
 [8-bit PIC design recommendations](https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/design-recommendations/)
+
+[PICPgm with FT232 adapter](https://www.franksteinberg.de/FT232-PIC-Programmer.htm)
