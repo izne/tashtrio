@@ -37,12 +37,40 @@ Just a quick, minimal schematic.
 ![Y1](/images/top1.PNG)
 
 ## Writing the firmware to the PIC12
-ICSP LVP with just an FT232R adapter appears to be one fast and cheap way.
-As for the software, there are at least two easy options: PICPgm and fpicprog. For FT232R, you need to remap the pins.
-Attached a one-pager PICPgm hints.
+ICSP LVP with just an FT232R adapter appears to be one fast and cheap way. 
+
+## Info on LVP limitations
+There certain limitations on PIC12F1840 when programmed the LVP way. In this method, the MCLR pin must remain MCLR and cannot take GPIO functions. Therefore, RA3 cannot be used if the firmware is programmed in LVP mode.
+RA3 is the PS/2 Keyboard Data signal, therefore the keyboard will not work if the firmware is programmed in LVP mode. 
+When firmware is programmed in HVP mode (like with PICkit3), the RA3 pin can take GPIO function and the keyboard will work.
+
+## PS/2 Keyboard workaround
+Simply change input pin. RA1 (UART RX) can be used instead for PS2 keyboard data input.
+The control on which pin is the keyboard connected could be established with a 2 pole switch.
+
+## PICPgm on Windows
+One option on Windows is PICPgm. For FT232R, you need to use the USB LVP programmer preset and remap the pins.
+Attached a one-pager PICPgm hints for FT23.
 ![ICSP_LVP_FTDI](/images/PIC12_Programming_All-in-One.png)
 
+
 ## References
+[Microchip PIC12F1840 Product page](https://www.microchip.com/en-us/product/pic12f1840)
+
+[Microchip PIC12F1840 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/41441B.pdf)
+
 [8-bit PIC design recommendations](https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8bit-pic/design-recommendations/)
 
 [PICPgm with FT232 adapter](https://www.franksteinberg.de/FT232-PIC-Programmer.htm)
+
+[TMK ADB Keyboard](https://github.com/tmk/tmk_keyboard/wiki/Apple-Desktop-Bus)
+
+[Topic: TMK ADB to USB keyboard converter](https://geekhack.org/index.php?topic=14290.msg277407#msg277407)
+
+[Microchip Application Note AN591 - Apple® Desktop Bus](https://ww1.microchip.com/downloads/en/AppNotes/00591b.pdf)
+
+[PIC12F1840 Programming](https://www.northernsoftware.com/dev/pic12f/pic12f1840.htm)
+
+[PIC12F1840 HVP Circuit](https://www.northernsoftware.com/nsdsp/hvp.htm)
+
+[Microchip Application Note 589 - HVP parallel programmer](https://ww1.microchip.com/downloads/en/appnotes/00589a.pdf)
