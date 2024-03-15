@@ -40,13 +40,12 @@ Just a quick, minimal schematic.
 ICSP LVP with just an FT232R adapter appears to be one fast and cheap way. 
 
 ## Info on LVP limitations
-There certain limitations on PIC12F1840 when programmed the LVP way. In this method, the MCLR pin must remain MCLR and cannot take GPIO functions. Therefore, RA3 cannot be used if the firmware is programmed in LVP mode.
+There are certain limitations on PIC12F1840 when programmed the LVP way. In this method, the MCLR pin must remain MCLR and cannot take GPIO functions. Therefore, RA3 cannot be used if the firmware is programmed in LVP mode.
 RA3 is the PS/2 Keyboard Data signal, therefore the keyboard will not work if the firmware is programmed in LVP mode. 
 When firmware is programmed in HVP mode (like with PICkit3), the RA3 pin can take GPIO function and the keyboard will work.
 
-## PS/2 Keyboard workaround
-Simply change input pin. RA1 (UART RX) can be used instead for PS2 keyboard data input.
-The control on which pin is the keyboard connected could be established with a 2 pole switch.
+## PS/2 Keyboard workaround for LVP
+RA1 (UART RX) can be used instead of RA3 for PS2 keyboard data input. Switching between RA1 and RA3 could be implemented via 2-pole switch or jumper on the board.
 
 ## PICPgm on Windows
 One option on Windows is PICPgm. For FT232R, you need to use the USB LVP programmer preset and remap the pins.
