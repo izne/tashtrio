@@ -39,7 +39,9 @@ Just a quick, minimal schematic.
 ![Board bottom](/images/ps2adb_back.PNG)
 
 ## Writing the firmware to the PIC12
-ICSP LVP with just an FT232R adapter appears to be one fast and cheap way. 
+[ICSP LVP with just an FT232R adapter](https://github.com/izne/PIC12-LVP-FTDI) appears to be one fast and cheap way. 
+
+
 
 ## Info on LVP limitations
 There are certain limitations on PIC12F1840 when programmed the LVP way. In this method, the MCLR pin must remain MCLR and cannot take GPIO functions. Therefore, RA3 cannot be used if the firmware is programmed in LVP mode.
