@@ -32,9 +32,11 @@ Building the firmware requires Microchip MPASM, which is included with their dev
 
 ## PS2toADB board
 Just a quick, minimal schematic.
-![YO](/images/board1.PNG)
+![Schema](/images/tashtrio_schema.PNG)
 
-![Y1](/images/top1.PNG)
+![Board front](/images/ps2adb_front.PNG)
+
+![Board bottom](/images/ps2adb_back.PNG)
 
 ## Writing the firmware to the PIC12
 ICSP LVP with just an FT232R adapter appears to be one fast and cheap way. 

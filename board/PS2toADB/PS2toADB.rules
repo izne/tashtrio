@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 869)
+    (start_pass_no 3121)
     (layer_rule F.Cu
       (active off)
       (preferred_direction horizontal)
@@ -65,8 +65,8 @@
     )
   )
   (class "kicad_default"
-    GND "Net-(D1-K)" "/PS2_KBD_DATA" VCC "/ADB_DATA" "/PS2_MSE_DATA" "/PS2_CLK" "unconnected-(U1-RA1-Pad6)"
-    "unconnected-(U1-RA0-Pad7)" "unconnected-(ADB_J1-Pad2)" "unconnected-(PS2KBD_J2-Pad4)" "unconnected-(PS2KBD_J2-Pad6)" "unconnected-(PS2KBD_J2-Pad2)" "unconnected-(PS2MSE_J3-Pad4)" "unconnected-(PS2MSE_J3-Pad6)" "unconnected-(PS2MSE_J3-Pad2)"
+    VCC "/ADB_DATA" "/PS2_CLK" "unconnected-(U1-RA1-Pad6)" "unconnected-(U1-RA0-Pad7)" GND "/PS2_DTK" "/PS2_DTM"
+    "/ADB_PWRON" "unconnected-(J2-Pad2)" "unconnected-(J2-Pad6)" "unconnected-(J3-Pad2)" "unconnected-(J3-Pad6)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
